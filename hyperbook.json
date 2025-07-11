@@ -9,5 +9,10 @@
   },
   "language": "en",
   "basePath": "/",
-  "logo": "/logos/icon.png"
+  "logo": "/logos/icon.png",
+  "qrcode": false,
+  "search": true,
+  "colors": {
+    "brand": "rgb(163, 90, 132)"
+  }
 }
