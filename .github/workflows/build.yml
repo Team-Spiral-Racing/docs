@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: |
           npx hyperbook build
-          echo "docs.teamspiralracing.com" > ${{ env.OUT_PATH }}
+          echo "docs.teamspiralracing.com" > ${{ env.OUT_PATH }}/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
