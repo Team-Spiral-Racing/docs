@@ -8,5 +8,6 @@
     "url": "https://www.teamspiralracing.com/"
   },
   "language": "en",
-  "basePath": "/"
+  "basePath": "/",
+  "logo": "/logos/icon.png"
 }
