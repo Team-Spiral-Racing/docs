@@ -8,6 +8,8 @@ on:
 
 jobs:
   deploy:
+    env:
+      OUT_PATH: ./.hyperbook/out
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -17,10 +19,11 @@ jobs:
       - name: Build
         run: |
           npx hyperbook build
+          echo "docs.teamspiralracing.com" > ${{ env.OUT_PATH }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.hyperbook/out
+          publish_dir: ${{ env.OUT_PATH }}
