@@ -1,11 +1,12 @@
 {
   "name": "teamspiralracing-docs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "documentation",
   "license": "cc-by-nc",
   "author": {
     "name": "Team Spiral Racing",
     "url": "https://www.teamspiralracing.com/"
   },
-  "language": "en"
+  "language": "en",
+  "basePath": "/"
 }
