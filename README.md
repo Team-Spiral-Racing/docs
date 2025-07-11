@@ -11,7 +11,11 @@ The easiest way to run this locally is by downloading the VSCode extension and w
 ## Deployment Strategy
 Currently the website is build via a GitHub action and deployed to the `gh-pages` branch where it is served. The `CNAME` is hard coded and directly injected during the build process.
 
-However, an alternative exists in the form of a Docker image. These [images](https://github.com/orgs/Team-Spiral-Racing/packages?repo_name=docs) are built upon [releases](https://github.com/Team-Spiral-Racing/docs/releases).
+However, an alternative exists in the form of a Docker image. These [images](https://github.com/orgs/Team-Spiral-Racing/packages?repo_name=docs) are built upon [releases](https://github.com/Team-Spiral-Racing/docs/releases). Releases are kicked off by pushing tags and can be done by running the following commands:
+```
+git tag v*.*.*
+git push origin tag v*.*.*
+```
 
 ## License
 This project is licensed under the Creative Commons BY-NC 4.0 License. See `LICENSE` for more information.
