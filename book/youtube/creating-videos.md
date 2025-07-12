@@ -30,10 +30,11 @@ videoCut <filename> <start_time> <end_time>
 videoCut GX012345.MP4 132 435
 ```
 7. The file will be cut and saved under "Downloads"
+::youtube[video cut on windows]{#KUp1DR_T1PA}
 :::
 
 :::tab{title="Mac" id="mac"}
-Consult the video below if you are stuck.
+Consult the video below if you are stuck. Do note that there is a fast way to clip videos using the default Mac functionality. This is shown in the video.
 1. Launch "Terminal".
 2. Find the video that you want cut. Move it to the "Movies" folder.
 3. Open the video you want to edit (ex. "GX012345.MP4").
@@ -47,6 +48,7 @@ videoCut <filename> <start_time> <end_time>
 videoCut GX012345.MP4 132 435
 ```
 7. The file will be cut and saved under "Downloads"
+::youtube[video cut on mac]{#bEgXWfKFmwk}
 :::
 
 ::::
@@ -64,6 +66,7 @@ YouTube thumbnails are created in Figma under "[TSR Thumbnails](https://www.figm
 8. Adjust the opacity of the layer to ensure that the text shows up well against the picture. To do this, select the "Opacity" layer under your frame, and adjust the RGB opacity value under "Fill" on the right. Generally 10-20% is good.
 9. Adjust the text in the image. From top to bottom it is location, type of video, and video number in series (runs).
 10. Export the thumbnail to its highest quality size. YouTube's max size for a thumbnail is 2MB. Generally if we export it directly, we will exceed this file size which is why we need to downscale it. To do this, select your thumbnail frame and locate the "Export" section on the right. Use PNG format and adjust the downscale value until you find a value just below 2MB (2000 Kb). Use the value to export the rest of the thumbnail frames.
+::youtube[creating a thumbnail]{#nvstbNON86o}
 
 ## Uploading to YouTube
 Video uploads to YouTube are done via scheduling in the future. If you have a series of videos, they should be scheduled on the coming Monday, with each video being scheduled the day after. A sample upload schedule is below for a series with 3 videos. If a video series is longer than 7 videos (a week) then continue to loop it back to Monday.
