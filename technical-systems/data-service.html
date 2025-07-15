@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1,, interactive-widget=resizes-content"><title>Data Service - Team Spiral Racing Documentation</title><meta property="og:title" value="Data Service - Team Spiral Racing Documentation"><meta name="description" content="Internal documentation for Team Spiral Racing"><meta property="og:description" content="Internal documentation for Team Spiral Racing"><meta name="keywords"><link rel="stylesheet" href="/__hyperbook_assets/normalize.css?version=0.53.4"><style>
+html,
+body {
+  overflow: hidden;
+  margin: 0;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --color-brand: rgb(163, 90, 132);
+  --color-brand-dark: rgb(163, 90, 132);
+  --color-brand-text: white;
+  --main-width: 980px;
+  --header-height: 60px;
+  --nav-width: minmax(300px, 0.33fr);
+  --nav-font-size: 0.9rem;
+  --body-font-size: 14px;
+}
+body {
+  overscroll-behavior-x: none;
+  background-color: transparent;
+  color: var(--color-text);
+  font-family: hyperbook-body;
+  font-weight: normal;
+  font-size: var(--body-font-size);
+  margin: 0;
+  padding: 0;
+}
+</style><noscript id="dark-mode-toggle-stylesheets"><link rel="stylesheet" href="/__hyperbook_assets/light.css?version=0.53.4" media="(prefers-color-scheme: light)"><link rel="stylesheet" href="/__hyperbook_assets/dark.css?version=0.53.4" media="(prefers-color-scheme: dark)"></noscript><script src="/__hyperbook_assets/dark-mode-toggle-stylesheets-loader.js?version=0.53.4"></script><script type="module" src="/__hyperbook_assets/dark-mode-toggle.mjs?version=0.53.4"></script><script src="/__hyperbook_assets/i18n.js?version=0.53.4"></script><script src="/__hyperbook_assets/dexie.min.js?version=0.53.4"></script><script src="/__hyperbook_assets/dexie-export-import.js?version=0.53.4"></script><script src="/__hyperbook_assets/store.js?version=0.53.4"></script><script>
+window.Prism = window.Prism || {};
+window.Prism.manual = true;</script><script src="/__hyperbook_assets/prism/prism.js?version=0.53.4"></script><link rel="stylesheet" href="/__hyperbook_assets/prism/prism.css?version=0.53.4"><link rel="stylesheet" href="/__hyperbook_assets/prism/prism-theme-github-dark.css?version=0.53.4" media="(prefers-color-scheme: dark)"><link rel="stylesheet" href="/__hyperbook_assets/prism/prism-theme-github-light.css?version=0.53.4" media="(prefers-color-scheme: light)"><link rel="stylesheet" href="/__hyperbook_assets/math/katex.min.css?version=0.53.4"><link rel="stylesheet" href="/__hyperbook_assets/shell.css?version=0.53.4"><link rel="stylesheet" href="/__hyperbook_assets/content.css?version=0.53.4"><link rel="stylesheet" href="/__hyperbook_assets/code.css?version=0.53.4"><script>
+HYPERBOOK_ASSETS = "/__hyperbook_assets/"
+</script><script type="module" src="/__hyperbook_assets/side-drawer.js?version=0.53.4" async></script><script src="/__hyperbook_assets/lunr.min.js?version=0.53.4" defer></script><script src="/__hyperbook_assets/search.js?version=0.53.4" defer></script><script src="/__hyperbook_assets/qrcode.js?version=0.53.4" async></script></head><body><div class="main-grid"><header><div class="mobile-nav"><button aria-label="Nav Toggle" class="toggle" onclick="hyperbook.navToggle()"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></button><side-drawer id="nav-drawer"><div class="nav-drawer-content"><nav><ul><li><a class="page" href="/">Introduction</a></li></ul><div data-id="_nav:/branding" class="section"><div class="collapsible name empty  "><span class="label">Branding</span></div><div class="collapsible-content links"><ul class="pages"><li><a class="page" href="/branding/introduction">Introduction</a></li><li><a class="page" href="/branding/logos">Logos</a></li></ul></div></div><div data-id="_nav:/technical-systems" class="section"><div class="collapsible name empty  expanded"><span class="label">Technical Systems</span></div><div class="collapsible-content links"><ul class="pages"><li><a class="page" href="/technical-systems/introduction">Introduction</a></li><li><a class="page" href="/technical-systems/tsr-web">TSR Website</a></li><li><a class="page" href="/technical-systems/documents-web">Documents Website (External)</a></li><li><a class="page" href="/technical-systems/docs-web">Documentation Website (Internal)</a></li><li><a class="page" href="/technical-systems/database">Database</a></li><li><a class="page active" href="/technical-systems/data-service">Data Service</a></li></ul></div></div><div data-id="_nav:/youtube" class="section"><div class="collapsible name empty  "><span class="label">YouTube</span></div><div class="collapsible-content links"><ul class="pages"><li><a class="page" href="/youtube/introduction">Introduction</a></li><li><a class="page" href="/youtube/creating-videos">Creating Videos</a></li></ul></div></div></nav><a class="author" href="https://hyperbook.openpatch.org">Powered by <b>Hyperbook</b></a></div></side-drawer></div><a class="branding" href="/"><div class="logo"><img alt="logo" src="/logos/icon.png"></div><div class="name">Team Spiral Racing Documentation</div></a><button id="search-toggle" onclick="hyperbook.searchToggle()" title="Search"></button><side-drawer id="search-drawer" right><div class="search-drawer-content"><div class="search-input"><div class="search-icon"></div><input id="search-input" placerholder="..."><button class="search-button" onclick="hyperbook.search()"></button></div><div id="search-results"></div></div></side-drawer><dark-mode-toggle id="dark-mode-toggle" appearence="switch" title="Toggle between Dark and Light Mode" permanent></dark-mode-toggle></header><div class="sidebar"><nav><ul><li><a class="page" href="/">Introduction</a></li></ul><div data-id="_nav:/branding" class="section"><div class="collapsible name empty  "><span class="label">Branding</span></div><div class="collapsible-content links"><ul class="pages"><li><a class="page" href="/branding/introduction">Introduction</a></li><li><a class="page" href="/branding/logos">Logos</a></li></ul></div></div><div data-id="_nav:/technical-systems" class="section"><div class="collapsible name empty  expanded"><span class="label">Technical Systems</span></div><div class="collapsible-content links"><ul class="pages"><li><a class="page" href="/technical-systems/introduction">Introduction</a></li><li><a class="page" href="/technical-systems/tsr-web">TSR Website</a></li><li><a class="page" href="/technical-systems/documents-web">Documents Website (External)</a></li><li><a class="page" href="/technical-systems/docs-web">Documentation Website (Internal)</a></li><li><a class="page" href="/technical-systems/database">Database</a></li><li><a class="page active" href="/technical-systems/data-service">Data Service</a></li></ul></div></div><div data-id="_nav:/youtube" class="section"><div class="collapsible name empty  "><span class="label">YouTube</span></div><div class="collapsible-content links"><ul class="pages"><li><a class="page" href="/youtube/introduction">Introduction</a></li><li><a class="page" href="/youtube/creating-videos">Creating Videos</a></li></ul></div></div></nav><a class="author" href="https://hyperbook.openpatch.org">Powered by <b>Hyperbook</b></a></div><main><article>
+<div class="hyperbook-markdown"><button id="toc-toggle" onclick="hyperbook.tocToggle()" title="Table of Contents"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div><div class="bar4"></div></button>
+  <side-drawer id="toc-drawer" right>
+    <div class="toc-drawer-content">
+      <nav class="toc">
+        <ul>
+          <li class="level-1"><a href="#team-spiral-racing-data-service">Team Spiral Racing Data Service</a></li>
+          <li class="level-2"><a href="#code-setup">Code Setup</a></li>
+          <li class="level-2"><a href="#deployment">Deployment</a></li>
+          <li class="level-2"><a href="#containerization">Containerization</a></li>
+        </ul>
+      </nav>
+    </div>
+  </side-drawer>
+  <h1 id="team-spiral-racing-data-service"><a href="#team-spiral-racing-data-service" class="heading"><span>Team Spiral Racing Data Service</span></a><button class="bookmark" onclick="hyperbook.toggleBookmark(&#x22;/technical-systems/data-service#team-spiral-racing-data-service&#x22;, &#x22;Team Spiral Racing Data Service&#x22;)" title="Toggle Bookmark" data-key="/technical-systems/data-service#team-spiral-racing-data-service">🔖</button></h1>
+  <p>The TSR Data Service is a serverless application that collects data from various sources. It is kicked off from a <a href="https://cron-job.org/en/">cron-job.org</a>. Authentication is done via a Bearer token.</p>
+  <h2 id="code-setup"><a href="#code-setup" class="heading"><span>Code Setup</span></a><button class="bookmark" onclick="hyperbook.toggleBookmark(&#x22;/technical-systems/data-service#code-setup&#x22;, &#x22;Code Setup&#x22;)" title="Toggle Bookmark" data-key="/technical-systems/data-service#code-setup">🔖</button></h2>
+  <p>The source code is hosted on <a href="https://github.com/Team-Spiral-Racing/data-servicea">GitHub</a> under the Team Spiral Racing <a href="https://github.com/Team-Spiral-Racing">GitHub org</a>.</p>
+  <h2 id="deployment"><a href="#deployment" class="heading"><span>Deployment</span></a><button class="bookmark" onclick="hyperbook.toggleBookmark(&#x22;/technical-systems/data-service#deployment&#x22;, &#x22;Deployment&#x22;)" title="Toggle Bookmark" data-key="/technical-systems/data-service#deployment">🔖</button></h2>
+  <p>Hosting is done by <a href="https://vercel.com/">Vercel</a>. Although CRON jobs are offered, they are extremely limited. Instead, CRON jobs are kicked off by REST API request from the aforementioned <a href="https://cron-job.org/en/">cron-job.org</a>. In cron-job.org, a POST method is sent at 12:15 AM, 6:15 AM, 12:15 PM, 6:15 PM to scan for new events in the past 6 hours. Each REST request contains a Bearer token which the application will cross check with <span data-rehype-pretty-code-figure=""><code data-language="plaintext" data-theme="github-dark github-light" style="--shiki-dark:#e1e4e8;--shiki-light:#24292e;--shiki-dark-bg:#24292e;--shiki-light-bg:#fff"><span data-line=""><span>CRON_SECRET</span></span><button type="button" data="CRON_SECRET" title="Copy code" aria-label="Copy code" class="rehype-pretty-copy" data-name="rehype-pretty-copy-button" onclick="navigator.clipboard.writeText(this.attributes.data.value);this.classList.add('rehype-pretty-copied');window.setTimeout(() => this.classList.remove('rehype-pretty-copied'), 3000);"><span class="ready"></span><span class="success"></span></button><style>:root {--copy-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23adadad' d='M16.187 9.5H12.25a1.75 1.75 0 0 0-1.75 1.75v28.5c0 .967.784 1.75 1.75 1.75h23.5a1.75 1.75 0 0 0 1.75-1.75v-28.5a1.75 1.75 0 0 0-1.75-1.75h-3.937a4.25 4.25 0 0 1-4.063 3h-7.5a4.25 4.25 0 0 1-4.063-3M31.813 7h3.937A4.25 4.25 0 0 1 40 11.25v28.5A4.25 4.25 0 0 1 35.75 44h-23.5A4.25 4.25 0 0 1 8 39.75v-28.5A4.25 4.25 0 0 1 12.25 7h3.937a4.25 4.25 0 0 1 4.063-3h7.5a4.25 4.25 0 0 1 4.063 3M18.5 8.25c0 .966.784 1.75 1.75 1.75h7.5a1.75 1.75 0 1 0 0-3.5h-7.5a1.75 1.75 0 0 0-1.75 1.75'/%3E%3C/svg%3E");--success-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2366ff85' d='M9 16.17L5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41z'/%3E%3C/svg%3E");}pre:has(code) {position: relative;}button[data='<span>'] {width: 0;height: 0;display: none;visibility: hidden;}pre button.rehype-pretty-copy {right: 1px;padding: 0;width: 24px;height: 24px;display: flex;margin-top: 2px;margin-right: 8px;position: absolute;border-radius: 25%;& span {width: 100%;aspect-ratio: 1 / 1;}& .ready {background-image: var(--copy-icon);}& .success {display: none; background-image: var(--success-icon);}}&.rehype-pretty-copied {& .success {display: block;} & .ready {display: none;}}pre button.rehype-pretty-copy.rehype-pretty-copied {opacity: 1;& .ready { display: none; }& .success { display: block; }}</style></code></span> to ensure that no other person is calling the API. The reason why there is a 15 minute boundry is due to Vercel recieving many requests from cron-job.org in peak hours causing denials.</p>
+  <h2 id="containerization"><a href="#containerization" class="heading"><span>Containerization</span></a><button class="bookmark" onclick="hyperbook.toggleBookmark(&#x22;/technical-systems/data-service#containerization&#x22;, &#x22;Containerization&#x22;)" title="Toggle Bookmark" data-key="/technical-systems/data-service#containerization">🔖</button></h2>
+  <p>A Docker image is built every single time a release is pushed. Pushing releases will kick off the application and update the changelog.</p><button id="qrcode-open" onclick="hyperbook.qrcodeOpen()" title="QR Code"><div class="qrcode-icon"></div></button>
+  <dialog id="qrcode-dialog">
+    <div class="container">
+      <div class="name">Data Service</div>
+      <div class="make-qrcode"></div>
+      <div class="url">
+        <div data-href="/technical-systems/data-service"></div>
+      </div>
+    </div><button class="close" onclick="hyperbook.qrcodeClose()"><div class="close-icon"></div></button>
+  </dialog>
+</div>
+</article><div class="jump-container"><a class="jump previous" href="/technical-systems/database">Database</a><a class="jump next" href="/youtube/introduction">Introduction</a></div><div class="meta"><a href="#" onclick="hyperbookReset()"><span class="reset-icon" title="Reset Hyperbook"></span></a><span class="copyright"><a href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC</a> by <a href="https://www.teamspiralracing.com/">Team Spiral Racing</a></span></div></main></div><script src="/__hyperbook_assets/client.js?version=0.53.4" defer></script></body></html>
