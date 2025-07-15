@@ -85,3 +85,30 @@ To upload the video, follow the steps below. Consult the video if you are stuck.
 6. Select "Not for Kids" and go to next.
 7. Schedule the upload on the next Monday that doesn't have a YouTube video already scheduled.
 8. For the rest of the videos follow the same steps. When reusing the details select the video you just created so you don't need to copy as much over. Just update the run number in the title. When scheduling the videos in a series it should fall on the next day.
+
+### Time Attack Videos
+When uploading Time Attack videos, ensure that you have the title of "Time Attack" as the category. For example, `Time Attack - Buttonwillow CW13 - 2:05.123`. In addition, in the description ensure you have the following (including the `===`):
+```
+===
+track: <TRACK NAME>
+configuration: <TRACK CONFIGURATION>
+date: <DATE OF RUN>
+car: <CAR BEING DRIVEN> *must be a car in the TSR database
+tag: <VERSION/TAG OF THE CAR>
+time: <TIME OF RUN>
+driver: <DRIVER'S TEAM SPIRAL RACING EMAIL>
+===
+```
+An example of it filled out would be:
+```
+===
+track: Buttonwillow
+configuration: CW13
+date: 06/03/2025
+car: hyperion
+tag: v3
+time: 1:12.123
+driver: jonathan.lo@teamspiralracing.com
+===
+```
+> Do note that if you do not fill the form out correctly then the times will not be uploaded to the Team Spiral Racing website.
