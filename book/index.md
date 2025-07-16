@@ -7,5 +7,6 @@ This website serves to maintain internal documentation regarding Team Spiral Rac
 
 ## Table of Contents
 - [Branding](/branding/introduction)
+- [Operations](/operations/introduction)
 - [Technical Systems](/technical-systems/introduction)
 - [YouTube](/youtube/introduction)
