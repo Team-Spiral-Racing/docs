@@ -11,5 +11,10 @@ The source code is hosted on [GitHub](https://github.com/Team-Spiral-Racing/data
 ## Deployment
 Hosting is done by [Vercel](https://vercel.com/). Although CRON jobs are offered, they are extremely limited. Instead, CRON jobs are kicked off by REST API request from the aforementioned [cron-job.org](https://cron-job.org/en/). In cron-job.org, a POST method is sent at 12:15 AM, 6:15 AM, 12:15 PM, 6:15 PM to scan for new events in the past 6 hours. Each REST request contains a Bearer token which the application will cross check with `CRON_SECRET` to ensure that no other person is calling the API. The reason why there is a 15 minute boundry is due to Vercel recieving many requests from cron-job.org in peak hours causing denials.
 
+### Application
+Inside the TSR Data Service, there are the following jobs.
+1. YouTube: Scrapes Team Spiral Racing YouTube for info and later processes them. Currently it records down times.
+2. Blog: Acts as an API to publish via Git objects to GitHub. Checks for diffs between the blogs in MongoDB and syncs them at midnight.
+
 ## Containerization
 A Docker image is built every single time a release is pushed. Pushing releases will kick off the application and update the changelog.
